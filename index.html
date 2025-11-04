@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SRC Team - Game Development Studio</title>
+    <title>SRC Team</title>
     <style>
         :root {
             --primary: #4aa4ee;
@@ -35,7 +35,7 @@
             width: 200%;
             height: 200%;
             z-index: -2;
-            background-image: url('Purple_Liquid_Background.png');
+            background-image: url('assets/Purple_Liquid_Background.png');
             background-size: cover;
             background-position: center;
             animation: rotateBackground 120s linear infinite;
@@ -248,13 +248,12 @@
         .game-image {
             width: 100%;
             height: 160px;
-            background: rgba(255, 255, 255, 0.2);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
             border-radius: 8px;
             margin-bottom: 15px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 3rem;
+            border: 2px solid rgba(255, 255, 255, 0.3);
         }
         
         .game-title {
@@ -305,20 +304,21 @@
         }
         
         .team-avatar {
-            width: 80px;
-            height: 80px;
+            width: 120px;
+            height: 120px;
             border-radius: 50%;
-            background: rgba(255, 255, 255, 0.2);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
             margin: 0 auto 15px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 2rem;
+            border: 3px solid rgba(255, 255, 255, 0.4);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
         }
         
         .team-name {
             font-size: 1.1rem;
             margin-bottom: 5px;
+            font-weight: 600;
         }
         
         .team-role {
@@ -521,28 +521,28 @@
                     
                     <div class="game-grid">
                         <div class="game-card">
-                            <div class="game-image">🎮</div>
+                            <div class="game-image" style="background-image: url('assets/daylight-adventure-thumbnail.jpg')"></div>
                             <h3 class="game-title">Daylight Adventure</h3>
                             <p class="game-desc">Explore a vibrant open world filled with mysteries and adventures.</p>
                             <a href="#" class="game-link">Play Now</a>
                         </div>
                         
                         <div class="game-card">
-                            <div class="game-image">🏒</div>
+                            <div class="game-image" style="background-image: url('assets/world-hockey-thumbnail.jpg')"></div>
                             <h3 class="game-title">World Hockey Online</h3>
                             <p class="game-desc">Compete in fast-paced hockey matches with players worldwide.</p>
                             <a href="#" class="game-link">Play Now</a>
                         </div>
                         
                         <div class="game-card">
-                            <div class="game-image">🚀</div>
+                            <div class="game-image" style="background-image: url('assets/galactic-frontiers-thumbnail.jpg')"></div>
                             <h3 class="game-title">Galactic Frontiers</h3>
                             <p class="game-desc">Build your empire among the stars in this space strategy game.</p>
                             <a href="#" class="game-link">Coming Soon</a>
                         </div>
                         
                         <div class="game-card">
-                            <div class="game-image">🏎️</div>
+                            <div class="game-image" style="background-image: url('assets/neon-racer-thumbnail.jpg')"></div>
                             <h3 class="game-title">Neon Racer X</h3>
                             <p class="game-desc">Race through futuristic cities in customizable high-speed vehicles.</p>
                             <a href="#" class="game-link">Coming Soon</a>
@@ -557,25 +557,25 @@
                     
                     <div class="team-grid">
                         <div class="team-card">
-                            <div class="team-avatar">👨‍💻</div>
+                            <div class="team-avatar" style="background-image: url('assets/alex-chen.jpg')"></div>
                             <h3 class="team-name">Alex Chen</h3>
                             <p class="team-role">Lead Developer</p>
                         </div>
                         
                         <div class="team-card">
-                            <div class="team-avatar">👩‍🎨</div>
-                            <h3 class="team-name">Maya Rodriguez</h3>
-                            <p class="team-role">Art Director</p>
+                            <div class="team-avatar" style="background-image: url('assets/pfp/DEVirtual.png')"></div>
+                            <h3 class="team-name">DEVirtual</h3>
+                            <p class="team-role">CO-Owner</p>
                         </div>
                         
                         <div class="team-card">
-                            <div class="team-avatar">👨‍🎨</div>
+                            <div class="team-avatar" style="background-image: url('assets/david-kim.jpg')"></div>
                             <h3 class="team-name">David Kim</h3>
                             <p class="team-role">Game Designer</p>
                         </div>
                         
                         <div class="team-card">
-                            <div class="team-avatar">👩‍💼</div>
+                            <div class="team-avatar" style="background-image: url('assets/sarah-johnson.jpg')"></div>
                             <h3 class="team-name">Sarah Johnson</h3>
                             <p class="team-role">Project Manager</p>
                         </div>
