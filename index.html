@@ -11,7 +11,6 @@
             --accent: #7ac5f3;
             --light: #c2e4ff;
             --dark: #0d3b66;
-            --bg-gradient: linear-gradient(135deg, #1a6fc4, #4aa4ee, #7ac5f3);
         }
         
         * {
@@ -22,16 +21,48 @@
         }
         
         body {
-            background: var(--bg-gradient);
             color: white;
             line-height: 1.6;
             min-height: 100vh;
+            overflow-x: hidden;
+            position: relative;
+        }
+        
+        .rotating-bg {
+            position: fixed;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            z-index: -2;
+            background-image: url('Background.png');
+            background-size: cover;
+            background-position: center;
+            animation: rotateBackground 120s linear infinite;
+            transform-origin: center center;
+        }
+        
+        @keyframes rotateBackground {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(13, 59, 102, 0.6);
+            z-index: -1;
         }
         
         .container {
             max-width: 1200px;
             margin: 0 auto;
             padding: 0 20px;
+            position: relative;
+            z-index: 1;
         }
         
         header {
@@ -388,21 +419,6 @@
             opacity: 0.7;
         }
         
-        .bubble {
-            position: absolute;
-            background: rgba(255, 255, 255, 0.1);
-            border-radius: 50%;
-            animation: float 15s infinite ease-in-out;
-            z-index: -1;
-        }
-        
-        @keyframes float {
-            0%, 100% { transform: translateY(0) translateX(0); }
-            25% { transform: translateY(-20px) translateX(10px); }
-            50% { transform: translateY(0) translateX(20px); }
-            75% { transform: translateY(20px) translateX(10px); }
-        }
-        
         @media (max-width: 768px) {
             .main-content {
                 grid-template-columns: 1fr;
@@ -415,10 +431,8 @@
     </style>
 </head>
 <body>
-    <div class="bubble" style="width: 100px; height: 100px; top: 10%; left: 5%;"></div>
-    <div class="bubble" style="width: 150px; height: 150px; top: 60%; left: 80%;"></div>
-    <div class="bubble" style="width: 80px; height: 80px; top: 30%; left: 90%;"></div>
-    <div class="bubble" style="width: 120px; height: 120px; top: 80%; left: 10%;"></div>
+    <div class="rotating-bg"></div>
+    <div class="overlay"></div>
     
     <header>
         <div class="container">
