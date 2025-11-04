@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vuga</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        
+        body {
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            color: #2c3e50;
+        }
+        
+        .main-content {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+        
+        .forums-section {
+            flex: 2;
+            min-width: 300px;
+        }
+        
+        .games-section {
+            flex: 1;
+            min-width: 250px;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+            background-color: white;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        th, td {
+            padding: 12px 15px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        
+        th {
+            background-color: #f2f2f2;
+            font-weight: bold;
+        }
+        
+        .forum-title {
+            font-weight: bold;
+            color: #3498db;
+        }
+        
+        .forum-reply {
+            color: #7f8c8d;
+            font-size: 0.9rem;
+        }
+        
+        .rss-notice {
+            text-align: right;
+            font-size: 0.8rem;
+            color: #7f8c8d;
+            margin-top: 10px;
+        }
+        
+        .games-category {
+            margin-bottom: 25px;
+        }
+        
+        .category-title {
+            font-weight: bold;
+            margin-bottom: 10px;
+            font-size: 1.1rem;
+        }
+        
+        .game-item {
+            margin-bottom: 8px;
+            padding-left: 15px;
+        }
+        
+        .coming-soon {
+            margin-top: 30px;
+        }
+        
+        .game-card {
+            background-color: white;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .game-title {
+            font-weight: bold;
+            margin-bottom: 10px;
+            font-size: 1.1rem;
+        }
+        
+        .game-actions {
+            margin-top: 10px;
+        }
+        
+        .game-actions a {
+            display: inline-block;
+            margin-right: 15px;
+            color: #3498db;
+            text-decoration: none;
+        }
+        
+        .game-actions a:hover {
+            text-decoration: underline;
+        }
+        
+        .promo-section {
+            background-color: white;
+            padding: 20px;
+            margin-bottom: 30px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .promo-title {
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 20px;
+            border-top: 1px solid #ddd;
+            color: #7f8c8d;
+            font-size: 0.9rem;
+        }
+        
+        @media (max-width: 768px) {
+            .main-content {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Vuga</h1>
+        </header>
+        
+        <div class="main-content">
+            <div class="forums-section">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>name</th>
+                            <th>games</th>
+                            <th>Forums</th>
+                            <th>abater store</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td colspan="4">Mon, Nov 3, 2025 6:19:54 pm PST | What's new | | Vuga Forums</td>
+                        </tr>
+                        <tr>
+                            <td>games</td>
+                            <td></td>
+                            <td></td>
+                            <td>
+                                <div class="forum-title">Pvrite Adventure 3 Development Livetbread</div>
+                                <div class="forum-reply">Last reply by mistlord on Sun. 02 Nov 2025 18:30:12 +0000</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>
+                                <div class="forum-title">Introduce Yourselves Here!</div>
+                                <div class="forum-reply">Last reply by progamer on Sun. 02 Nov 2025 15:55:06 +0000</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>
+                                <div class="forum-title">Pvrite Adventure 3 Questions</div>
+                                <div class="forum-reply">Last reply by progamer on Sun. 02 Nov 2025 15:54:21 +0000</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>
+                                <div class="forum-title">Pvrite adventure collab idea's</div>
+                                <div class="forum-reply">Last reply by strawbewwysprout371 on Sun. 02 Nov 2025 02:56:16 +0000</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>
+                                <div class="forum-title">Favorite Song (Any Song)</div>
+                                <div class="forum-reply">Last reply by SuperFalcon95 on Sun. 02 Nov 2025 00:29:33 +0000</div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="rss-notice">Powered by RSS 2 HTML</div>
+            </div>
+            
+            <div class="games-section">
+                <div class="games-category">
+                    <div class="category-title">dener games</div>
+                    <div class="game-item">PARTY</div>
+                    <div class="game-item">SIMULATOR</div>
+                </div>
+                
+                <div class="coming-soon">
+                    <div class="category-title">coming soon</div>
+                    
+                    <div class="game-card">
+                        <div class="game-title">DAYRITE CABVENTURE</div>
+                        <div class="game-actions">
+                            <a href="#">play the demo ></a>
+                            <a href="#">reading the development thread ></a>
+                        </div>
+                    </div>
+                    
+                    <div class="game-card">
+                        <div class="game-title">WORLD HOCKEY ONLINE</div>
+                        <div class="game-actions">
+                            <a href="#">watch beta gameplay ></a>
+                            <a href="#">read the development thread ></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="promo-section">
+            <div class="promo-title">Who doesn't like free stuff? exclusive codes for SONIO Projector RP are available here.</div>
+            <div>Itching for more Pvrite? Episode Noob is available to play now in Pvrite Adventure 2.</div>
+        </div>
+        
+        <footer>
+            Vuga is a development team that makes Roblox games and all trademarks, logos, and copyrights are property of their respective owners.
+        </footer>
+    </div>
+</body>
+</html>
